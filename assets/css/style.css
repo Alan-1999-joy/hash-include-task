@@ -1,0 +1,438 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white: #FFFFFF;
+    --primary-bg-color : #007AFF;
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(../fonts/gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(../fonts/gilroy/Gilroy-Medium.ttf);
+}
+
+/*---------------------header section start------------------------*/
+
+.mobile-menu{
+    display: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--white);
+}
+
+.container.header{
+    height: 80px;
+    background-color: var(--white);
+}
+.container.header svg.logo{
+    width: 166.69px;
+    height: 43.92px;
+    cursor: pointer;
+}
+.container.header .header-right .profile{
+    width: 94px;
+    height: 54px;
+    padding: 8px 8px 8px 16px;
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+.container.header .header-right .profile .profile-pic{
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/portrait-attractive-arab-man-black-removebg-preview\ 2.png);
+    background-size: cover;
+    background-color: #B6EFC1;
+    border-radius: 50px;
+}
+
+.container.header .header-right .notifications{
+    position: relative;
+    width: 53.74px;
+    height: 53.74px;
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+.container.header .header-right .notifications .ellipse{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.container.header .header-right .language{
+    width: 94px;
+    height: 54px;
+    padding: 8px;
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.container.header .header-right .search{
+    width: 53.74px;
+    height: 53.74px;
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/*---------------------header section end------------------------*/
+
+/*---------------------video section start------------------------*/
+
+div.video-sec{
+    position: relative;
+    height: 809.04px;
+}
+div.video-sec video{
+    position: absolute;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+div.video-sec .container{
+    height: 100%;
+    position: relative;
+}
+div.video-sec .container h1{
+    width: 50%;
+    font-family: Gilroy-Bold;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: var(--white);
+}
+div.video-sec .container span{
+    width: 50%;
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: var(--white);
+}
+div.video-sec .container button{
+    width: 155.45px;
+    height: 52.74px;
+    border: 1.22px solid var(--primary-bg-color);
+    background-color: var(--white);
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.20000000298023224px;
+    color: var(--primary-bg-color);
+    border-radius: 32.85px;
+}
+div.video-sec .container button svg{
+    transition: .2s;
+    transition-timing-function: linear;
+}
+div.video-sec .container button:hover svg{
+    margin-left: 10px;
+}
+
+/*---------------------video section end------------------------*/
+
+/*---------------------middle section start------------------------*/
+
+div.middle-sec{
+    background-image: url(../images/gradient.webp);
+    background-size: cover;
+}
+div.middle-sec .filter-sec div.icons{
+    cursor: pointer;
+}
+div.middle-sec .filter-sec .filter-icon{
+    width: 45.66px;
+    height: 45.66px;
+    border: 1.22px solid var(--primary-bg-color);
+    border-radius: 100px;
+    margin-right: 10px;
+}
+div.middle-sec .filter-sec .filter-options{
+    width: fit-content;
+    height: 45.66px;
+    padding: 8px 10px;
+    border: 1.22px solid var(--primary-bg-color);
+    border-radius: 10px;
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+    font-family: Gilroy-SemiBold;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    transition: .4s;
+}
+div.middle-sec .filter-sec .filter-options.active, div.middle-sec .filter-sec .filter-options:hover{
+    color: var(--white);
+    background-color: var(--primary-bg-color);
+}
+.filter-options-right{
+    height: 45.66px;
+}
+.filter-options-right span{
+    font-family: Gilroy-SemiBold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: right;
+    cursor: pointer;
+}
+.filter-options-right .view-all-icon{
+    width: 36px;
+    height: 36px;
+    border: 1.22px solid var(--primary-bg-color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+div.middle-sec .card-sec .cards{
+    width: 100%;
+    height: 248px;
+    background-size: cover;
+    cursor: pointer;
+}
+div.middle-sec .card-1{
+    background-image: url(../images/card-1.webp);
+}
+div.middle-sec .card-2{
+    background-image: url(../images/card-2.webp);
+}
+div.middle-sec .card-3{
+    background-image: url(../images/card-3.webp);
+}
+div.middle-sec .card-4{
+    background-image: url(../images/card-4.webp);
+}
+div.middle-sec .card-5{
+    background-image: url(../images/card-5.webp);
+}
+div.middle-sec .card-6{
+    background-image: url(../images/card-6.webp);
+}
+
+div.middle-sec .card-sec .cards .card-left{
+    width: 80%;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+div.middle-sec .card-sec .cards .card-left .card-title h3{
+    font-family: Gilroy-Bold;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: white;
+}
+div.middle-sec .card-sec .cards .card-left .card-title h6{
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: white;
+}
+div.middle-sec .card-sec .cards .card-left .card-title .card-heart{
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(108.46deg, rgba(255, 255, 255, 0.264) 0%, rgba(255, 255, 255, 0.066) 100%);
+    border-radius: 100px;
+}
+
+div.middle-sec .card-sec .cards .card-left .card-title-2 .card-title-2-left{
+    width: 80%;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+div.middle-sec .card-sec .cards .card-left .card-title-2 .card-title-2-right{
+    width: 20%;
+}
+
+div.middle-sec .card-sec .cards .card-right{
+    width: 20%;
+    height: 100%;
+}
+div.middle-sec .card-sec .cards .card-right h6{
+    font-family: Gilroy-SemiBold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--white);
+}
+
+/*---------------------middle section start------------------------*/
+
+/*---------------------mosaic grid section start------------------------*/
+
+.reads-title{
+    font-family: Gilroy-Bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.mosaic-sec{
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 260px;
+}
+.mosaic-sec .card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 0;
+    border: none;
+}
+.mosaic-sec .card h6{
+    max-width: 180px;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: var(--white);
+}
+
+/*---------------------mosaic grid section end------------------------*/
+
+/*---------------------foter section start------------------------*/
+
+.footer{
+    position: relative;
+    height: 504px;
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    margin-top: 240px;
+}
+.footer .container{
+    height: inherit;
+    position: relative;
+}
+.footer .download-sec{
+    width: 100%;
+    height: 590px;
+    position: relative;
+    top: -240px;
+}
+.footer .download-sec .download-sec-left{
+    width: 487px;
+    height: 100%;
+}
+.footer .download-sec .download-sec-left h6{
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.footer .download-sec .download-sec-left span{
+    width: 359px;
+    height: 44px;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+.footer .download-sec .download-sec-left svg{
+    transition: .2s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+.footer .download-sec .download-sec-left svg:hover{
+    transform: translateY(-6px);
+}
+
+.footer .download-sec .download-sec-right{
+    transition: .2s;
+    transition-timing-function: linear;
+    flex: 1 1 auto;
+}
+.footer .download-sec .download-sec-right:hover{
+    transform: translateY(-6px);
+}
+
+.footer .main-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer .main-footer img{
+    cursor: pointer;
+    transition: .2s;
+    transition-timing-function: linear;
+}
+.footer .main-footer img:hover{
+    transform: translateY(-6px);
+}
+.footer .main-footer .footer-links{
+    list-style: none;
+}
+.footer .main-footer .footer-links li{
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: var(--white);
+    border-right: 1px solid var(--white);
+    padding: 0 10px;
+    cursor: pointer;
+    transition: .2s;
+    transition-timing-function: linear;
+}
+.footer .main-footer .footer-links li:hover{
+    transform: translateY(-6px);
+}
+.footer .main-footer .footer-links li:last-child{
+    border: none;
+}
+.footer .main-footer .social-media{
+    list-style: none;
+}
+.footer .main-footer .social-media li{
+    width: 42px;
+    height: 42px;
+    background-color: var(--white);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+    transition-timing-function: linear;
+}
+.footer .main-footer .social-media li:hover{
+    transform: translateY(-6px);
+}
+
+/*---------------------foter section end------------------------*/
