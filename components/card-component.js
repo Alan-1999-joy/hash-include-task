@@ -101,6 +101,9 @@ var videoSec = Vue.component('card-comp',{
                             MILD                                       
                         </h6>
                     </div>
+                    <div class="card-hover">
+                        <span>View</span>
+                    </div>
                 </div>`,
     props : {
         index : Number
